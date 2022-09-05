@@ -4,6 +4,7 @@
     let clear = document.querySelector('.btn-clear');
     let equal = document.querySelector('.btn-equal');
     let del = document.querySelector('.btn-del');
+    let percent = document.querySelector('.btn-percent');
 
 
     buttons.forEach(function(button){
@@ -31,6 +32,12 @@
     
     del.addEventListener('click', function(e) {
         screen.value = screen.value.slice(0, -1);
+    })
+    
+    
+    percent.addEventListener('click', function(){
+        screen.value = screen.value / 100;
+        
     })
 
 
